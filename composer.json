@@ -1,0 +1,18 @@
+{
+    "name": "kevin/exposicion",
+    "description": "exposicion del video 51 al 56",
+    "type": "project",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Kevin\\Exposicion\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Kevin Lopez",
+            "email": "ksloez709@misena.edu.co"
+        }
+    ],
+    "require": {}
+}
