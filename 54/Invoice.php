@@ -2,9 +2,11 @@
 
 namespace App;
 
+use App\Exception\MissingBillingInfoException;
+
 class Invoice
 {
-    public Customer $customer;
+    //public Customer $customer;
 
     public function __construct(public Customer $customer)
     {
@@ -17,7 +19,7 @@ class Invoice
         }
 
         if (empty($this->customer->getBillingInfo())){
-            throw new \MissingBillingInfoException('Missing billing information');
+            throw new MissingBillingInfoException('Missing billing information');
         }
 
         echo 'Processing $' . $amount . 'invoice - ';

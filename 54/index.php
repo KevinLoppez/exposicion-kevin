@@ -16,7 +16,7 @@ function foo()
 
 function process()
 {
-    $invoice = new Invoice(new Customer('foo' => 'bar'));
+    $invoice = new Invoice(new Customer(['foo' => 'bar']));
 
     try{
         $invoice->process(25);
